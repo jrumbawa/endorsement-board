@@ -18,7 +18,6 @@ onValue(endorsementListInDB, function(snapshot) {
     const endorsementListArr = Object.values(snapshot.val())
     endorsementsListEl.innerHTML = ""
     for (let i = 0; i < endorsementListArr.length; i++) {
-      // console.log(endorsementListArr[i])
       appendToEndorsementList(endorsementListArr[i])
     }
   } else {
